@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Placar</string>
+    <string name="btn_start">Iniciar</string>
+    <string name="btn_reset">Resetar</string>
+    <string name="btn_resetDesc">Botão para reiniciar a partida</string>
+    <string name="btn_startDesc">Botão para começar a partida</string>
+    <string name="btn_addGol">Botão para adicionar gol</string>
+    <string name="btn_addEsc">Botão para adicionar escanteio</string>
+    <string name="btn_addFal">Botão para adicionar falta</string>
+    <string name="btn_addChute">Botão para adicionar chute a gol</string>
+
+</resources>
