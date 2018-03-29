@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -14,7 +20,8 @@
         android:layout_height="66dp"
         android:background="@color/primaryLightColor"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:layout_margin="@dimen/margem"
+        android:padding="8dp">
 
         <EditText
             android:layout_width="wrap_content"
@@ -31,7 +38,7 @@
             android:gravity="center"
             android:text="X"
             android:textColor="@color/primaryTextColor"
-            android:textSize="28sp" />
+            android:textSize="20sp" />
 
         <EditText
             android:layout_width="wrap_content"
@@ -49,8 +56,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/primaryColor"
+        android:layout_margin="@dimen/margem"
         android:orientation="horizontal"
-        android:padding="16dp">
+        android:padding="8dp">
 
         <Button
             android:id="@+id/btn_reset"
@@ -87,7 +95,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/margem"
 
         android:gravity="bottom"
         android:orientation="horizontal">
@@ -101,10 +109,11 @@
             android:text="+" />
 
         <TextView
+            android:id="@+id/edGol1"
+            style="@style/textos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            style="@style/textos" />
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -119,8 +128,7 @@
             style="@style/textos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:text="0" />
-
+            android:text="0" />
         <Button
             android:id="@+id/btn_addGol2"
             android:layout_width="48dp"
@@ -137,7 +145,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/margem"
         android:orientation="horizontal"
 
         >
@@ -151,10 +159,11 @@
             android:text="+" />
 
         <TextView
+            android:id="@+id/edEsc1"
+            style="@style/textos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            style="@style/textos"/>
+            android:text="0" />
 
         <TextView
             style="@style/textos"
@@ -186,13 +195,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/margem"
         android:orientation="horizontal"
 
         >
 
         <Button
-            android:id="@+id/btn_addFaltas1"
+            android:id="@+id/btn_addFal1"
             android:layout_width="48dp"
             android:layout_height="48dp"
             style="@style/botao"
@@ -200,11 +209,11 @@
             android:text="+" />
 
         <TextView
+            android:id="@+id/edFal1"
+            style="@style/textos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            style="@style/textos"
-            />
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -236,7 +245,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_margin="16dp"
+        android:layout_margin="@dimen/margem"
         android:orientation="horizontal">
 
         <Button
@@ -248,10 +257,11 @@
             style="@style/botao" />
 
         <TextView
+            android:id="@+id/edChute1"
+            style="@style/textos"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="0"
-            style="@style/textos"/>
+            android:text="0" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -280,3 +290,4 @@
 
 
 </LinearLayout>
+</ScrollView>
